@@ -7,21 +7,21 @@
 <p align="center">O seu gerenciador de voos, simples e elegante</p>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alefemoreira/sync-drive?color=blue">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alefemoreira/planer?color=blue">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/alefemoreira/sync-drive?color=blue">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/alefemoreira/planer?color=blue">
 
-  <a href="https://github.com/alefemoreira/sync-drive/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alefemoreira/sync-drive?color=blue">
+  <a href="https://github.com/alefemoreira/planer/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alefemoreira/planer?color=blue">
   </a>
 
-  <a href="https://github.com/alefemoreira/sync-drive/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/alefemoreira/sync-drive?color=blue">
+  <a href="https://github.com/alefemoreira/planer/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/alefemoreira/planer?color=blue">
   </a>
   
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alefemoreira/sync-drive?color=blue">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alefemoreira/planer?color=blue">
 
-  <img alt="License" src="https://img.shields.io/badge/license-GPL3.0-brightgreen?color=blue">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
 </p>
 
 <p align="center">
