@@ -1,3 +1,61 @@
+<h1 align="center">
+  <img alt="Planner" title="planner" src="https://github.com/alefemoreira/planer/blob/master/.github/logo.png" width="250px"/>
+</h1>
+
+<!--<h2 align="center">API</h2>-->
+
+<p align="center">O seu gerenciador de voos, simples e elegante</p>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alefemoreira/sync-drive?color=blue">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/alefemoreira/sync-drive?color=blue">
+
+  <a href="https://github.com/alefemoreira/sync-drive/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alefemoreira/sync-drive?color=blue">
+  </a>
+
+  <a href="https://github.com/alefemoreira/sync-drive/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/alefemoreira/sync-drive?color=blue">
+  </a>
+  
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alefemoreira/sync-drive?color=blue">
+
+  <img alt="License" src="https://img.shields.io/badge/license-GPL3.0-brightgreen?color=blue">
+</p>
+
+<p align="center">
+  <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contributors">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">License</a>
+</p>
+
+<!--<p>
+   <img alt="Frontend" src="https://raw.githubusercontent.com/alefemoreira/sync-drive/master/.github/sync-drive.png" width="100%"/>
+</p>-->
+
+## Technologies
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [Typescript](https://www.typescriptlang.org/)
+
+## Project
+
+O seu gerenciador de voos, simples e elegante
+
+## Layout
+
+Você pode visualizar o layout do projeto (wireframe) através [desse link](https://www.figma.com/file/AIrlESU4vPKKGJqy6EEd8r/Desafio-FAB-Tech?node-id=12%3A34). Lembrando que você irá precisar ter uma conta no [Figma](https://www.figma.com/).
+
+## License
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
