@@ -47,11 +47,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: 500ms;
+}
+
+#page-flights header div #home:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 #page-flights header div #home svg {
   /* margin-right: 16px; */
   color: var(--primary-color);
+  transition: 500ms;
+}
+
+#page-flights header div #home:hover svg {
+  color: #f8f8f2;
 }
 
 #page-flights h1 {
