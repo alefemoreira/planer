@@ -98,6 +98,7 @@
 #page-edit-flight form .field-group .field #date,
 #page-edit-flight form .field-group .field #time {
   width: 200px;
+  text-align: center;
 }
 
 #page-create-point form .field input::placeholder {
