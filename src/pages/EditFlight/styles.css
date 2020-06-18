@@ -1,4 +1,4 @@
-#page-create-flight {
+#page-edit-flight {
   width: 100%;
   max-width: 1024px;
 
@@ -6,14 +6,14 @@
   padding-bottom: 128px;
 }
 
-#page-create-flight header {
+#page-edit-flight header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 40px 0 60px 0;
 }
 
-#page-create-flight header a {
+#page-edit-flight header a {
   color: var(--title-color);
   font-weight: bold;
   text-decoration: none;
@@ -22,12 +22,12 @@
   align-items: center;
 }
 
-#page-create-flight header a svg {
+#page-edit-flight header a svg {
   margin-right: 16px;
   color: var(--primary-color);
 }
 
-#page-create-flight form {
+#page-edit-flight form {
   margin: 0 auto;
   padding: 56px;
   max-width: 730px;
@@ -38,22 +38,22 @@
   flex-direction: column;
 }
 
-#page-create-flight form h1 {
+#page-edit-flight form h1 {
   font-size: 32;
 }
 
-#page-create-flight form p {
+#page-edit-flight form p {
   font-size: 12px;
   color: var(--primary-color);
 }
 
-#page-create-flight form fieldset {
+#page-edit-flight form fieldset {
   margin-top: 56px;
   min-inline-size: auto;
   border: 0;
 }
 
-#page-create-flight form legend {
+#page-edit-flight form legend {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -61,17 +61,17 @@
   margin-bottom: 24px;
 }
 
-#page-create-flight form legend h2 {
+#page-edit-flight form legend h2 {
   font-size: 24px;
 }
 
-#page-create-flight form .field-group {
+#page-edit-flight form .field-group {
   flex: 1;
   display: flex;
   flex-direction: row;
 }
 
-#page-create-flight form .field {
+#page-edit-flight form .field {
   /* flex: 1; */
 
   display: flex;
@@ -80,11 +80,11 @@
   margin-right: 24px;
 }
 
-#page-create-flight form .field input[type="text"],
-#page-create-flight form .field input[type="email"],
-#page-create-flight form .field input[type="date"],
-#page-create-flight form .field input[type="time"],
-#page-create-flight form .field input[type="number"] {
+#page-edit-flight form .field input[type="text"],
+#page-edit-flight form .field input[type="email"],
+#page-edit-flight form .field input[type="date"],
+#page-edit-flight form .field input[type="time"],
+#page-edit-flight form .field input[type="number"] {
   flex: 1;
   background: #f0f0f5;
   border-radius: 4px;
@@ -95,8 +95,8 @@
   color: #6c6c80;
 }
 
-#page-create-flight form .field-group .field #date,
-#page-create-flight form .field-group .field #time {
+#page-edit-flight form .field-group .field #date,
+#page-edit-flight form .field-group .field #time {
   width: 200px;
 }
 
@@ -104,28 +104,28 @@
   color: #a0a0b2;
 }
 
-#page-create-flight form .field label {
+#page-edit-flight form .field label {
   font-size: 16px;
   margin-top: 24px;
   margin-bottom: 8px;
 }
 
-#page-create-flight form .field :disabled {
+#page-edit-flight form .field :disabled {
   cursor: not-allowed;
 }
 
-#page-create-flight form .field #uf {
+#page-edit-flight form .field #uf {
   width: 104px;
 }
-/*#page-create-flight form .field-group .field + .field {
+/*#page-edit-flight form .field-group .field + .field {
   margin-left: 24px;
 }
 
-#page-create-flight form .field-group input + input {
+#page-edit-flight form .field-group input + input {
   margin-left: 24px;
 }*/
 
-#page-create-flight form button {
+#page-edit-flight form button {
   width: 260px;
   height: 56px;
   background: var(--primary-color);
@@ -140,29 +140,29 @@
   cursor: pointer;
 }
 
-#page-create-flight form button:hover {
+#page-edit-flight form button:hover {
   background: #b91b20;
 }
 
 @media (max-width: 900px) {
-  #page-create-flight {
+  #page-edit-flight {
     width: 100%;
     max-width: 80vw;
     padding-bottom: 128px;
     margin: 0 auto;
   }
 
-  #page-create-flight form {
+  #page-edit-flight form {
     padding-left: 32px;
     padding-right: 32px;
   }
-  #page-create-flight form .field-group {
+  #page-edit-flight form .field-group {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
-  #page-create-flight form button {
+  #page-edit-flight form button {
     margin-left: auto;
     margin-right: auto;
   }

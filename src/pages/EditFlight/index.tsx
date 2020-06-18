@@ -1,11 +1,11 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, FormEvent, ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 
 import logo from "../../assets/logo.svg";
 import "./styles.css";
 
-const CreateFlight: React.FC = () => {
+const EditFlight: React.FC = () => {
   const [date, setDate] = useState({
     date: "",
     time: "",
@@ -26,8 +26,6 @@ const CreateFlight: React.FC = () => {
   function handleDateChange(event: ChangeEvent<HTMLInputElement>) {
     const { name, value } = event.target;
     setDate({ ...date, [name]: value });
-
-    console.log(date);
   }
 
   function handleOriginChange(event: ChangeEvent<HTMLInputElement>) {
@@ -42,14 +40,9 @@ const CreateFlight: React.FC = () => {
 
   function hadleSubmit(event: FormEvent) {
     event.preventDefault();
-
-    console.log(`${date.date}T${date.time}`);
-    console.log(origin);
-    console.log(destiny);
   }
-
   return (
-    <div id="page-create-flight">
+    <div id="page-edit-flight">
       <header>
         <img src={logo} alt="Planer" height="48px" />
         <Link to="/">
@@ -59,7 +52,7 @@ const CreateFlight: React.FC = () => {
       </header>
 
       <form onSubmit={hadleSubmit}>
-        <h1>Cadastro de voo</h1>
+        <h1>Edição de voo</h1>
         <p>Todos os campos são obrigatórios</p>
 
         <fieldset>
@@ -107,7 +100,7 @@ const CreateFlight: React.FC = () => {
                 name="country"
                 id="country"
                 onChange={handleOriginChange}
-                required={true}
+                required
               />
             </div>
             <div className="field">
@@ -117,7 +110,7 @@ const CreateFlight: React.FC = () => {
                 name="cep"
                 id="cep"
                 onChange={handleOriginChange}
-                required={true}
+                required
               />
             </div>
           </div>
@@ -130,7 +123,7 @@ const CreateFlight: React.FC = () => {
                 name="state"
                 id="state"
                 onChange={handleOriginChange}
-                required={true}
+                required
               />
             </div>
             <div className="field">
@@ -140,7 +133,7 @@ const CreateFlight: React.FC = () => {
                 name="city"
                 id="city"
                 onChange={handleOriginChange}
-                required={true}
+                required
               />
             </div>
           </div>
@@ -159,7 +152,7 @@ const CreateFlight: React.FC = () => {
                 name="country"
                 id="country"
                 onChange={handleDestinyChange}
-                required={true}
+                required
               />
             </div>
             <div className="field">
@@ -169,7 +162,7 @@ const CreateFlight: React.FC = () => {
                 name="cep"
                 id="cep"
                 onChange={handleDestinyChange}
-                required={true}
+                required
               />
             </div>
           </div>
@@ -182,7 +175,7 @@ const CreateFlight: React.FC = () => {
                 name="state"
                 id="state"
                 onChange={handleDestinyChange}
-                required={true}
+                required
               />
             </div>
             <div className="field">
@@ -192,15 +185,15 @@ const CreateFlight: React.FC = () => {
                 name="city"
                 id="city"
                 onChange={handleDestinyChange}
-                required={true}
+                required
               />
             </div>
           </div>
         </fieldset>
-        <button type="submit">Cadastrar voo</button>
+        <button type="submit">Editar voo</button>
       </form>
     </div>
   );
 };
 
-export default CreateFlight;
+export default EditFlight;

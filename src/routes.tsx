@@ -3,6 +3,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
 import CreateFlight from "./pages/CreateFlight";
+import EditFlight from "./pages/EditFlight";
 import Flights from "./pages/Flights";
 
 const Routes: React.FC = () => {
@@ -10,6 +11,7 @@ const Routes: React.FC = () => {
     <BrowserRouter>
       <Route component={Home} path="/" exact />
       <Route component={CreateFlight} path="/create-flight" exact />
+      <Route component={EditFlight} path="/edit-flight" exact />
       <Route component={Flights} path="/flights" exact />
     </BrowserRouter>
   );

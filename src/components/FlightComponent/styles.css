@@ -1,0 +1,73 @@
+#component-flight {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 32px 52px;
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#component-flight button {
+  border: solid 1.5px;
+  border-color: #dcdce5;
+  background-color: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+
+  margin-right: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 500ms;
+}
+
+#component-flight button:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+#component-flight button svg {
+  color: var(--primary-color);
+  transition: 500ms;
+}
+
+#component-flight button:hover svg {
+  color: #f8f8f2;
+}
+
+#component-flight .column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  margin-right: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#component-flight .column + .column + .column + .column + .column + .column {
+  margin-right: 0;
+}
+
+#component-flight .column p {
+  font-size: 12px;
+  color: #6c6c80;
+}
+
+#component-flight .column strong {
+  font-size: 24px;
+}
+
+#component-flight .column div {
+  margin-bottom: 16px;
+}
+
+#component-flight .column div + div {
+  margin-bottom: 0;
+}
