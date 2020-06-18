@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiHome } from "react-icons/fi";
-import FlightComponent from "../../components/FlightComponent";
+import { Provider } from "react-redux";
 
+import store from "../../store";
+import FlightList from "../../components/FlightList";
 import logo from "../../assets/logo.svg";
 
 import "./styles.css";
@@ -24,17 +26,9 @@ const Flights: React.FC = () => {
 
       <h1>Voos</h1>
 
-      <ul>
-        <li>
-          <FlightComponent />
-        </li>
-        <li>
-          <FlightComponent />
-        </li>
-        <li>
-          <FlightComponent />
-        </li>
-      </ul>
+      <Provider store={store}>
+        <FlightList />
+      </Provider>
     </div>
   );
 };
