@@ -6,6 +6,42 @@ const INITIAL_STATE: FlightsState = {
   newFlight: {} as Flight,
   data: [
     {
+      id: "",
+      datatime: "",
+      origin: {
+        country: "",
+        state: "",
+        city: "",
+        cep: "",
+      },
+      destiny: {
+        country: "",
+        state: "",
+        city: "",
+        cep: "",
+      },
+    },
+  ] as Flight[],
+};
+
+const reducer: Reducer<FlightsState> = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case FlightsTypes.LOAD_FLIGHTS:
+      console.log("here action");
+      console.log(action.payload.data);
+      return { ...state, data: action.payload.data };
+    case FlightsTypes.EDIT_FLIGHTS:
+      return { ...state, editFlight: action.id };
+    case FlightsTypes.ADD_FLIGHTS:
+      return { ...state, newFlight: action.newFlight };
+    default:
+      return state;
+  }
+};
+
+export default reducer;
+
+/*{
       id: "789acb",
       datatime: "2020-05-18T09:30:00",
       origin: {
@@ -52,21 +88,4 @@ const INITIAL_STATE: FlightsState = {
         city: "Santa Rita",
         cep: "58300-000",
       },
-    },
-  ],
-};
-
-const reducer: Reducer<FlightsState> = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    case FlightsTypes.LOAD_FLIGHTS:
-      return { ...state, data: action.data };
-    case FlightsTypes.EDIT_FLIGHTS:
-      return { ...state, editFlight: action.id };
-    case FlightsTypes.ADD_FLIGHTS:
-      return { ...state, newFlight: action.newFlight };
-    default:
-      return state;
-  }
-};
-
-export default reducer;
+    },*/

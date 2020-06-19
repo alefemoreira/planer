@@ -1,13 +1,22 @@
 import React from "react";
-import { useSelector, Provider } from "react-redux";
+import { connect, Provider } from "react-redux";
 
 import store, { ApplicationState } from "../../store";
+import { Flight } from "../../store/ducks/flights/types";
 import FlightComponent from "../FlightComponent";
 import "./styles.css";
 
-const FlightList: React.FC = () => {
-  const flights = useSelector((state: ApplicationState) => state.flights.data);
+interface StateProps {
+  flights: Flight[];
+}
 
+interface DispatchProps {}
+
+interface OwnProps {}
+
+type Props = StateProps & DispatchProps & OwnProps;
+
+const FlightList: React.FC<Props> = ({ flights }) => {
   return (
     <div id="compoment-flight-list">
       <ul>
@@ -23,4 +32,8 @@ const FlightList: React.FC = () => {
   );
 };
 
-export default FlightList;
+const mapStateToProps = (state: ApplicationState) => ({
+  flights: state.flights.data,
+});
+
+export default connect(mapStateToProps)(FlightList);
