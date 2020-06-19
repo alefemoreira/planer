@@ -41,6 +41,8 @@
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
 - [Typescript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/)
+- [Redux Saga](https://redux-saga.js.org/)
 
 ## Project
 
