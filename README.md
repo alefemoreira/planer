@@ -28,6 +28,7 @@
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-run">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
 
@@ -48,6 +49,17 @@ O seu gerenciador de voos, simples e elegante
 ## Layout
 
 Você pode visualizar o layout do projeto (wireframe) através [desse link](https://www.figma.com/file/AIrlESU4vPKKGJqy6EEd8r/Desafio-FAB-Tech?node-id=12%3A34). Lembrando que você irá precisar ter uma conta no [Figma](https://www.figma.com/).
+
+## How to run
+```shell
+git clone https://github.com/alefemoreira/planer.git planer
+
+cd planer
+
+yarn install
+
+yarn start
+```
 
 ## License
 
