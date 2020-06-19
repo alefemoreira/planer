@@ -10,7 +10,7 @@ export interface ApplicationState {
   flights: FlightsState;
 }
 
-const sagaMiddleware = createSagaMiddleware();
+export const sagaMiddleware = createSagaMiddleware();
 
 const store: Store<ApplicationState> = createStore(
   rootReducer,
@@ -18,5 +18,6 @@ const store: Store<ApplicationState> = createStore(
 );
 
 sagaMiddleware.run(load);
+// sagaMiddleware.run(rootSaga);
 
 export default store;

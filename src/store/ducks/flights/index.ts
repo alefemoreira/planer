@@ -4,31 +4,12 @@ import { Reducer } from "redux";
 const INITIAL_STATE: FlightsState = {
   editFlight: "",
   newFlight: {} as Flight,
-  data: [
-    {
-      id: "",
-      datatime: "",
-      origin: {
-        country: "",
-        state: "",
-        city: "",
-        cep: "",
-      },
-      destiny: {
-        country: "",
-        state: "",
-        city: "",
-        cep: "",
-      },
-    },
-  ] as Flight[],
+  data: [] as Flight[],
 };
 
 const reducer: Reducer<FlightsState> = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case FlightsTypes.LOAD_FLIGHTS:
-      console.log("here action");
-      console.log(action.payload.data);
       return { ...state, data: action.payload.data };
     case FlightsTypes.EDIT_FLIGHTS:
       return { ...state, editFlight: action.id };

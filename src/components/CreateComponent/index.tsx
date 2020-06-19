@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import crypto from "crypto";
 
@@ -9,6 +10,7 @@ import equalDestinations from "../../utils/equalDestinations";
 import "./styles.css";
 
 const CreateComponent: React.FC = () => {
+  const history = useHistory();
   const flights = useSelector((state: ApplicationState) => state.flights.data);
   const dispatch = useDispatch();
 
@@ -45,8 +47,10 @@ const CreateComponent: React.FC = () => {
   }
 
   function hadleSubmit(event: FormEvent) {
-    // event.preventDefault();
+    event.preventDefault();
+
     const verifications = flights.map((flight) => {
+      console.log("HERE");
       if (flight.datatime.split("T")[0] === date.date) {
         if (equalDestinations(destiny, flight.destiny)) {
           alert("Voo já existe para esse destino neste dia");
@@ -61,7 +65,7 @@ const CreateComponent: React.FC = () => {
       return true;
     });
 
-    if (verifications.indexOf(false) !== undefined) {
+    if (verifications.indexOf(false) !== -1) {
       return;
     }
 
@@ -85,8 +89,8 @@ const CreateComponent: React.FC = () => {
       } as Flight,
     });
 
-    console.log("foi");
     alert("Success");
+    history.push("/");
   }
 
   return (
@@ -229,7 +233,10 @@ const CreateComponent: React.FC = () => {
           </div>
         </div>
       </fieldset>
-      <button type="submit">Cadastrar voo</button>
+      <button type="submit">
+        {/*onSubmit={hadleSubmit}*/}
+        Cadastrar voo
+      </button>
     </form>
   );
 };
